@@ -33,7 +33,7 @@ button,input,select,textarea{font-family:inherit;font-size:inherit;color:inherit
 .btn{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);background:#fff;color:var(--ink);
   padding:8px 14px;border-radius:var(--r);cursor:pointer;font-size:13.5px;font-weight:500;transition:.15s;white-space:nowrap}
 .btn:hover{border-color:var(--ink-3);background:#fbfdfe}
-.btn:disabled{opacity:.5;cursor:progress}
+.btn:disabled{opacity:.55;cursor:progress}
 .btn:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
 .btn-primary{background:var(--teal);border-color:var(--teal);color:#fff}
 .btn-primary:hover{background:var(--teal-dark);border-color:var(--teal-dark)}
@@ -42,8 +42,6 @@ button,input,select,textarea{font-family:inherit;font-size:inherit;color:inherit
 .btn-sm{padding:5px 10px;font-size:12.5px;border-radius:6px}
 .btn-ghost{background:transparent;border-color:transparent;color:var(--ink-2)}
 .btn-ghost:hover{background:#fff;border-color:var(--line)}
-
-/* เข้าสู่ระบบ */
 #authView{min-height:100vh;display:grid;place-items:center;padding:30px 18px}
 .auth{width:100%;max-width:440px;background:var(--card);border:1px solid var(--line);border-radius:14px;
   box-shadow:0 20px 50px rgba(15,36,56,.13);overflow:hidden}
@@ -55,8 +53,6 @@ button,input,select,textarea{font-family:inherit;font-size:inherit;color:inherit
 .auth-body .f{margin-bottom:13px}
 .auth-note{font-size:12.5px;color:var(--ink-3);margin-top:16px;line-height:1.6;text-align:center}
 .auth-note a{color:var(--teal-dark);cursor:pointer;font-weight:600;text-decoration:none}
-
-/* แถบบน */
 .topbar{background:rgba(255,255,255,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:60}
 .topbar-in{max-width:1200px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
 .brand{display:flex;align-items:center;gap:12px}
@@ -79,8 +75,6 @@ button,input,select,textarea{font-family:inherit;font-size:inherit;color:inherit
 .page-head h2{font-family:var(--loop);font-size:24px;margin:0;font-weight:600}
 .page-head .lead{font-size:13.5px;color:var(--ink-3)}
 .code-badge{font-family:var(--mono);font-size:13px;background:var(--ink);color:#fff;padding:3px 10px;border-radius:6px}
-
-/* dashboard */
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:10px;margin-bottom:18px}
 .stat{background:var(--card);border:1px solid var(--line-soft);border-radius:var(--r);padding:13px 14px 12px;cursor:pointer;position:relative;overflow:hidden;transition:.15s}
 .stat:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(15,36,56,.08)}
@@ -94,7 +88,6 @@ button,input,select,textarea{font-family:inherit;font-size:inherit;color:inherit
 .search svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);opacity:.45}
 select.filter{padding:9px 11px;border:1px solid var(--line);border-radius:var(--r);background:#fff}
 input:focus,select:focus,textarea:focus{outline:2px solid var(--teal);outline-offset:0;border-color:var(--teal)}
-
 .list{display:flex;flex-direction:column;gap:10px}
 .rec{background:var(--card);border:1px solid var(--line-soft);border-radius:var(--r);overflow:hidden;transition:.15s;display:grid;grid-template-columns:126px 1fr auto}
 .rec:hover{border-color:var(--ink-3);box-shadow:0 4px 16px rgba(15,36,56,.08)}
@@ -125,8 +118,6 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--teal);outline-of
 .empty{background:var(--card);border:1px dashed var(--line);border-radius:var(--r);padding:52px 24px;text-align:center}
 .empty h3{font-family:var(--loop);margin:0 0 6px;font-size:17px}
 .empty p{margin:0 0 18px;color:var(--ink-3);font-size:14px}
-
-/* แผ่นฟอร์ม */
 .sheet{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-bottom:14px;box-shadow:0 1px 2px rgba(15,36,56,.04)}
 .sheet-head{display:flex;align-items:center;gap:11px;padding:11px 16px;background:linear-gradient(90deg,var(--teal-soft),#f4f8f9);border-bottom:1px solid var(--line-soft)}
 .sheet-num{font-family:var(--mono);font-size:12px;font-weight:600;color:#fff;background:var(--teal);width:23px;height:23px;border-radius:6px;display:grid;place-items:center;flex:none}
@@ -191,8 +182,10 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--teal);outline-of
 .toast.show{opacity:1;transform:translate(-50%,0)}
 .banner{background:#fdf1e0;border:1px solid #e7c39c;color:#b45309;border-radius:var(--r);padding:10px 14px;font-size:13px;margin-top:16px}
 .info{background:var(--teal-soft);border:1px solid #bcd9d8;color:var(--teal-dark);border-radius:var(--r);padding:11px 14px;font-size:13px;margin-bottom:14px}
-.loading{position:fixed;inset:0;background:rgba(255,255,255,.6);backdrop-filter:blur(2px);display:grid;place-items:center;z-index:300}
-.spin{width:34px;height:34px;border:3px solid var(--line);border-top-color:var(--teal);border-radius:50%;animation:sp .8s linear infinite}
+.loading{position:fixed;inset:0;background:rgba(255,255,255,.55);backdrop-filter:blur(2px);display:grid;place-items:center;z-index:300}
+.loading .box{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px 26px;display:flex;align-items:center;gap:14px;box-shadow:0 14px 40px rgba(15,36,56,.16)}
+.spin{width:26px;height:26px;border:3px solid var(--line);border-top-color:var(--teal);border-radius:50%;animation:sp .8s linear infinite;flex:none}
+.loading .box span{font-size:13.5px;color:var(--ink-2)}
 @keyframes sp{to{transform:rotate(360deg)}}
 @media(prefers-reduced-motion:reduce){.spin{animation-duration:2s}}
 body.role-user .admin-only{display:none!important}
@@ -233,7 +226,7 @@ body.role-user .admin-only{display:none!important}
         <p class="auth-note">ยังไม่มีบัญชี? <a id="goRegister">ลงทะเบียนผู้ใช้ใหม่</a><br>ลืมรหัสผ่าน กรุณาติดต่อผู้ดูแลระบบของหน่วยงาน</p>
       </div>
       <div id="paneRegister" class="hidden">
-        <div class="f"><label for="rgName">ชื่อ–สกุล <span class="req" style="color:#be123c">*</span></label><input type="text" id="rgName" placeholder="น.ส. สุดารัตน์ ใจดี"></div>
+        <div class="f"><label for="rgName">ชื่อ–สกุล <span style="color:#be123c">*</span></label><input type="text" id="rgName" placeholder="น.ส. สุดารัตน์ ใจดี"></div>
         <div class="f"><label for="rgDept">หน่วยงาน / หอผู้ป่วย <span style="color:#be123c">*</span></label><input type="text" id="rgDept" placeholder="หอผู้ป่วยอายุรกรรมหญิง"></div>
         <div class="f"><label for="rgPos">ตำแหน่ง</label><input type="text" id="rgPos" placeholder="พยาบาลวิชาชีพ"></div>
         <div class="f"><label for="rgEmail">อีเมล <span style="font-weight:400;color:#7e93a7">(ใช้รับแจ้งเตือนสถานะ)</span></label><input type="email" id="rgEmail"></div>
@@ -271,7 +264,6 @@ body.role-user .admin-only{display:none!important}
 <div class="wrap hidden" id="app">
   <div id="offlineWarn" class="banner hidden">เชื่อมต่อเซิร์ฟเวอร์ไม่ได้ กำลังแสดงข้อมูลล่าสุดที่โหลดไว้ — ยังบันทึกคำขอใหม่ไม่ได้จนกว่าจะเชื่อมต่อได้</div>
 
-  <!-- หน้าหลัก -->
   <section id="viewHome" class="hidden">
     <div class="page-head">
       <h2 id="homeTitle">หน้าหลัก</h2>
@@ -297,10 +289,9 @@ body.role-user .admin-only{display:none!important}
     <div class="list" id="list"></div>
   </section>
 
-  <!-- ฟอร์ม -->
   <section id="viewForm" class="hidden">
     <div class="page-head"><h2 id="formTitle">ยื่นคำขอใหม่</h2><span class="code-badge" id="formCodeBadge">คำขอใหม่</span></div>
-    <div class="info">กรอกตามลำดับ 1 → 6 ช่องที่มี <b style="color:#be123c">*</b> จำเป็นต้องกรอก เมื่อกดส่งคำขอ ระบบจะเปลี่ยนสถานะเป็น “ส่งคำขอแล้ว” และส่งอีเมลแจ้งผู้ดูแลระบบทันที</div>
+    <div class="info">กรอกตามลำดับ 1 → 6 ช่องที่มี <b style="color:#be123c">*</b> จำเป็นต้องกรอก เมื่อกดส่งคำขอ ระบบจะเปลี่ยนสถานะเป็น “ส่งคำขอแล้ว” และส่งอีเมลแจ้งผู้ดูแลระบบอัตโนมัติ</div>
     <form id="reqForm" novalidate>
       <div class="sheet">
         <div class="sheet-head"><span class="sheet-num">1</span><h2>ผู้ยื่นคำขอและหน่วยงาน</h2></div>
@@ -313,7 +304,6 @@ body.role-user .admin-only{display:none!important}
           <div class="f"><label for="head_name">หัวหน้าหน่วยงานผู้รับรอง</label><input type="text" id="head_name"></div>
         </div>
       </div>
-
       <div class="sheet">
         <div class="sheet-head"><span class="sheet-num">2</span><h2>รายละเอียดคำขอ</h2></div>
         <div class="sheet-body grid g3">
@@ -328,7 +318,6 @@ body.role-user .admin-only{display:none!important}
           <div class="f full"><label for="remark">หมายเหตุ</label><textarea id="remark"></textarea></div>
         </div>
       </div>
-
       <div class="sheet">
         <div class="sheet-head"><span class="sheet-num">3</span><h2>ข้อมูลแบบฟอร์ม</h2></div>
         <div class="sheet-body grid g2">
@@ -345,7 +334,6 @@ body.role-user .admin-only{display:none!important}
             <input type="text" id="freq_other" class="hidden" style="margin-top:9px" placeholder="ระบุความถี่อื่น ๆ"></div>
         </div>
       </div>
-
       <div class="sheet">
         <div class="sheet-head"><span class="sheet-num">4</span><h2>โครงสร้างฟิลด์ในแบบฟอร์ม</h2></div>
         <div class="sheet-body">
@@ -359,13 +347,11 @@ body.role-user .admin-only{display:none!important}
           </div>
         </div>
       </div>
-
       <div class="sheet">
         <div class="sheet-head"><span class="sheet-num">5</span><h2>ความเชื่อมโยงข้อมูลและระบบอัตโนมัติ</h2></div>
         <div class="sheet-body"><div class="f"><label for="integration_note">รายละเอียด</label>
           <textarea id="integration_note" style="min-height:110px" placeholder="เช่น ดึงข้อมูลผู้ป่วยและสัญญาณชีพจากระบบ HIS · รวมคะแนนอัตโนมัติและแปลผล · แจ้งเตือนเมื่อถึงเกณฑ์ · รายงานตัวชี้วัดที่ต้องการ"></textarea></div></div>
       </div>
-
       <div class="sheet">
         <div class="sheet-head"><span class="sheet-num">6</span><h2>ไฟล์แบบฟอร์มแนบ</h2><span class="hint">Word · PDF · Excel · รูปภาพ</span></div>
         <div class="sheet-body">
@@ -374,7 +360,6 @@ body.role-user .admin-only{display:none!important}
           <ul class="files" id="fileList"></ul>
         </div>
       </div>
-
       <div class="sheet adm admin-only">
         <div class="sheet-head"><span class="sheet-num">7</span><h2>ส่วนของผู้ดูแลระบบ / คณะกรรมการ</h2><span class="hint">ผู้ยื่นคำขอไม่เห็นส่วนนี้</span></div>
         <div class="sheet-body grid g3">
@@ -388,7 +373,6 @@ body.role-user .admin-only{display:none!important}
           <div class="f span2"><label for="decision_note">บันทึกการพิจารณา / ข้อความถึงผู้ขอ</label><textarea id="decision_note"></textarea></div>
         </div>
       </div>
-
       <div class="formbar no-print">
         <button type="button" class="btn" id="btnCancel">ยกเลิก</button>
         <span class="spacer"></span><span style="font-size:12.5px;color:var(--ink-3)" id="saveHint"></span>
@@ -398,7 +382,6 @@ body.role-user .admin-only{display:none!important}
     </form>
   </section>
 
-  <!-- รายละเอียด -->
   <section id="viewDetail" class="hidden">
     <div class="page-head">
       <h2 id="dTitle">รายละเอียดคำขอ</h2><span class="code-badge" id="dCode">—</span><span id="dStatus"></span>
@@ -411,7 +394,6 @@ body.role-user .admin-only{display:none!important}
     <div id="detailBody"></div>
   </section>
 
-  <!-- ผู้ใช้และผู้ดูแล -->
   <section id="viewUsers" class="hidden">
     <div class="page-head"><h2>ผู้ใช้และผู้ดูแลระบบ</h2><span class="lead">เฉพาะผู้ดูแลหลักจึงเพิ่มหรือเปลี่ยนสิทธิ์ได้</span></div>
     <div class="sheet"><div class="sheet-head"><span class="sheet-num">A</span><h2>ตั้งค่าทั่วไป</h2></div>
@@ -432,7 +414,6 @@ body.role-user .admin-only{display:none!important}
       <div class="sheet-body" style="padding:0"><div class="tab-scroll"><table class="atab" id="userTable"></table></div></div></div>
   </section>
 
-  <!-- บัญชีของฉัน -->
   <section id="viewAccount" class="hidden">
     <div class="page-head"><h2>บัญชีของฉัน</h2></div>
     <div class="sheet"><div class="sheet-head"><span class="sheet-num">✓</span><h2>เปลี่ยนรหัสผ่าน</h2></div>
@@ -446,7 +427,7 @@ body.role-user .admin-only{display:none!important}
 
 <div id="printArea"></div>
 <div class="toast" id="toast"></div>
-<div class="loading hidden" id="loading"><div class="spin"></div></div>
+<div class="loading hidden" id="loading"><div class="box"><div class="spin"></div><span id="loadMsg">กำลังทำงาน…</span></div></div>
 
 <script>
 /* =====================================================================
@@ -461,20 +442,33 @@ const K_TOKEN='enr_token', K_CACHE='enr_cache';
 let TOKEN = localStorage.getItem(K_TOKEN) || '';
 let ME = null, ORG = '', DB = [], OFFLINE = false;
 
-const busy = on => document.getElementById('loading').classList.toggle('hidden', !on);
+function busy(on, msg){
+  const el=document.getElementById('loading');
+  if(msg)document.getElementById('loadMsg').textContent=msg;
+  el.classList.toggle('hidden',!on);
+}
 async function api(action, payload){
-  if(API_URL.indexOf('PASTE_') === 0) throw new Error('ยังไม่ได้ตั้งค่า API_URL ในไฟล์ HTML');
+  if(API_URL.indexOf('PASTE_')===0) throw new Error('ยังไม่ได้ตั้งค่า API_URL ในไฟล์ HTML');
   const res = await fetch(API_URL, {
     method:'POST', headers:{'Content-Type':'text/plain;charset=utf-8'},
     body: JSON.stringify(Object.assign({action, token:TOKEN}, payload||{}))
   });
   const j = await res.json();
-  if(!j.ok) throw new Error(j.error||'เกิดข้อผิดพลาด');
+  if(!j.ok){
+    if(/เซสชันหมดอายุ/.test(j.error||'')){ sessionExpired(); throw new Error(j.error); }
+    throw new Error(j.error||'เกิดข้อผิดพลาด');
+  }
   return j.data;
+}
+function sessionExpired(){
+  localStorage.removeItem(K_TOKEN); TOKEN='';
+  busy(false);
+  toast('เซสชันหมดอายุ กำลังพากลับไปหน้าเข้าสู่ระบบ');
+  setTimeout(()=>location.reload(),1600);
 }
 
 /* =====================================================================
-   3) ตัวเลือกทั้งหมด (รหัส ↔ ชื่อไทย ตรงกับฐานข้อมูล)
+   3) ตัวเลือก (รหัส ↔ ชื่อไทย ตรงกับฐานข้อมูล)
    ===================================================================== */
 const OPT = {
   req_type:[['NEW','แบบฟอร์มใหม่'],['REVISE','ปรับปรุงแบบฟอร์มเดิม']],
@@ -500,7 +494,7 @@ const STATUS={
 };
 const STEPS=['SENT','REVIEW','TEMPLATE','SUBMIT_MR','TESTING','LIVE'];
 const lab=(k,c)=>{const f=(OPT[k]||[]).filter(x=>x[0]===c)[0];return f?f[1]:(c||'');};
-const labs=(k,arr)=>(arr||[]).map(c=>lab(k,c));
+const labs=(k,a)=>(a||[]).map(c=>lab(k,c));
 const ftLab=c=>{const f=FIELD_TYPES.filter(x=>x[0]===c)[0];return f?f[1]:c;};
 
 /* =====================================================================
@@ -517,30 +511,34 @@ function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('show');cl
 const isAdmin=()=>ME&&(ME.role_code==='admin'||ME.role_code==='owner');
 const isOwner=()=>ME&&ME.role_code==='owner';
 const st=r=>STATUS[r.status]||STATUS.DRAFT;
+function setDB(rows){ DB=rows||[]; try{localStorage.setItem(K_CACHE,JSON.stringify(DB));}catch(e){} }
 
 /* =====================================================================
-   5) เข้าสู่ระบบ / ลงทะเบียน
+   5) เข้าสู่ระบบ
    ===================================================================== */
 $('#goRegister').onclick=()=>{$('#paneLogin').classList.add('hidden');$('#paneRegister').classList.remove('hidden');};
 $('#goLogin').onclick=()=>{$('#paneRegister').classList.add('hidden');$('#paneLogin').classList.remove('hidden');};
 $('#btnLogin').onclick=async()=>{
   const u=$('#liUser').value.trim(), p=$('#liPass').value;
   if(!u||!p)return toast('กรุณากรอกชื่อผู้ใช้และรหัสผ่าน');
-  busy(true);
-  try{ const d=await api('login',{username:u,password:p}); await start(d); }
-  catch(e){ toast(e.message); } finally{ busy(false); }
+  $('#btnLogin').disabled=true; busy(true,'กำลังเข้าสู่ระบบ…');
+  try{ await start(await api('login',{username:u,password:p})); }
+  catch(e){ toast(e.message); }
+  finally{ busy(false); $('#btnLogin').disabled=false; }
 };
 $('#liPass').addEventListener('keydown',e=>{if(e.key==='Enter')$('#btnLogin').click();});
 $('#btnRegister').onclick=async()=>{
   const p={username:$('#rgUser').value.trim(),password:$('#rgPass').value,full_name:$('#rgName').value.trim(),
     dept_name:$('#rgDept').value.trim(),position:$('#rgPos').value.trim(),email:$('#rgEmail').value.trim()};
   if(!p.username||!p.password||!p.full_name||!p.dept_name)return toast('กรุณากรอกช่องที่มีเครื่องหมาย * ให้ครบ');
-  busy(true);
-  try{ const d=await api('register',p); await start(d); toast('ลงทะเบียนเรียบร้อย ยินดีต้อนรับ'); }
-  catch(e){ toast(e.message); } finally{ busy(false); }
+  $('#btnRegister').disabled=true; busy(true,'กำลังลงทะเบียน…');
+  try{ await start(await api('register',p)); toast('ลงทะเบียนเรียบร้อย ยินดีต้อนรับ'); }
+  catch(e){ toast(e.message); }
+  finally{ busy(false); $('#btnRegister').disabled=false; }
 };
 $('#btnLogout').onclick=()=>{ if(!confirm('ออกจากระบบ?'))return; localStorage.removeItem(K_TOKEN); location.reload(); };
 
+/* ★ login/me คืนรายการคำขอมาพร้อมกันแล้ว ไม่ต้องยิงรอบสอง */
 async function start(d){
   TOKEN=d.token||TOKEN; localStorage.setItem(K_TOKEN,TOKEN);
   ME=d.user; ORG=d.org_name||'';
@@ -551,23 +549,25 @@ async function start(d){
   $('#whoRole').textContent=ME.role_code==='owner'?'ผู้ดูแลหลัก':(ME.role_code==='admin'?'ผู้ดูแลร่วม':'ผู้ยื่นคำขอ');
   $('#whoRole').classList.toggle('adm',isAdmin());
   $('#status').innerHTML=Object.keys(STATUS).map(k=>`<option value="${k}">${STATUS[k].t}</option>`).join('');
-  $('#fType').insertAdjacentHTML('beforeend',OPT.req_type.map(o=>`<option value="${o[0]}">${o[1]}</option>`).join(''));
+  if($('#fType').options.length<2)
+    $('#fType').insertAdjacentHTML('beforeend',OPT.req_type.map(o=>`<option value="${o[0]}">${o[1]}</option>`).join(''));
   buildChips();
-  await refresh();
+  OFFLINE=false; $('#offlineWarn').classList.add('hidden');
+  setDB(d.requests||[]);
   go('home');
 }
 async function refresh(){
-  busy(true);
-  try{
-    DB=await api('list');
-    OFFLINE=false; localStorage.setItem(K_CACHE,JSON.stringify(DB));
-  }catch(e){
-    OFFLINE=true; DB=JSON.parse(localStorage.getItem(K_CACHE)||'[]');
+  busy(true,'กำลังโหลดข้อมูล…');
+  try{ setDB(await api('list')); OFFLINE=false; }
+  catch(e){
+    if(!TOKEN)return;
+    OFFLINE=true;
+    try{ DB=JSON.parse(localStorage.getItem(K_CACHE)||'[]'); }catch(x){ DB=[]; }
     toast('เชื่อมต่อเซิร์ฟเวอร์ไม่ได้: '+e.message);
   }finally{ busy(false); }
   $('#offlineWarn').classList.toggle('hidden',!OFFLINE);
 }
-$('#btnReload').onclick=async()=>{ await refresh(); renderHome(); toast('รีเฟรชข้อมูลแล้ว'); };
+$('#btnReload').onclick=async()=>{ await refresh(); renderHome(); if(!OFFLINE)toast('รีเฟรชข้อมูลแล้ว'); };
 
 /* =====================================================================
    6) นำทาง
@@ -589,6 +589,7 @@ $('#btnNewTop').onclick=()=>go('new');
 /* =====================================================================
    7) chips
    ===================================================================== */
+let chipsBuilt=false;
 function chipSet(id,key,type,cb){
   const el=$('#'+id);
   el.innerHTML=OPT[key].map(o=>`<label class="chip"><input type="${type}" name="${key}" value="${o[0]}"><span>${esc(o[1])}</span></label>`).join('');
@@ -605,6 +606,7 @@ function setChips(key,val,type){
   $$(`input[name="${key}"]`).forEach(i=>{i.checked=a.indexOf(i.value)>-1;i.closest('.chip').classList.toggle('sel',i.checked);});
 }
 function buildChips(){
+  if(chipsBuilt)return; chipsBuilt=true;
   chipSet('c_req_type','req_type','radio',v=>$('#wrapOld').style.display=(v==='REVISE')?'':'none');
   chipSet('c_urgency','urgency','radio',v=>$('#wrapUrgent').classList.toggle('hidden',v!=='URGENT'));
   chipSet('c_doc_type','doc_type','radio',v=>$('#doc_type_other').classList.toggle('hidden',v!=='OTHER'));
@@ -691,22 +693,20 @@ async function openForm(rec){
   $('#reqForm').reset(); $$('.f').forEach(f=>f.classList.remove('err')); $('#fieldRows').innerHTML=''; FILES=[];
   let full=null;
   if(rec){
-    busy(true);
+    busy(true,'กำลังเปิดคำขอ…');
     try{ full=await api('get',{request_id:rec.request_id}); }
     catch(e){ busy(false); return toast(e.message); }
     busy(false);
   }
   const d=full?full.request:{};
   editing=rec?rec.request_id:null;
-  TXT.forEach(k=>{const el=$('#'+k);if(!el)return;
-    el.value=(k.indexOf('date')>-1)?dstr(d[k]):(d[k]||'');});
+  TXT.forEach(k=>{const el=$('#'+k);if(!el)return; el.value=(k.indexOf('date')>-1)?dstr(d[k]):(d[k]||'');});
   if(!rec){
     $('#send_date').value=today();
     $('#requester_name').value=ME.full_name; $('#dept_name').value=ME.dept_name||'';
     $('#requester_position').value=ME.position||''; $('#email').value=ME.email||''; $('#phone_ext').value=ME.phone_ext||'';
     $('#status').value='SENT';
   }else $('#status').value=d.status||'SENT';
-
   setChips('req_type',d.req_type||'NEW','radio');
   setChips('urgency',d.urgency||'NORMAL','radio');
   setChips('doc_type',d.doc_type||'NURSE_RECORD','radio');
@@ -758,23 +758,25 @@ async function commit(asDraft){
   if(!asDraft&&!validate())return;
   if(asDraft&&!$('#form_name_th').value.trim())return toast('กรอกชื่อแบบฟอร์มก่อนบันทึกร่าง');
   const o=collect();
-  o.status=asDraft?'DRAFT':(isAdmin()?$('#status').value:( editing?o.status:'SENT'));
-  if(!isAdmin()&&!asDraft&&(!o.status||o.status==='DRAFT'))o.status='SENT';
-  busy(true); $('#btnSave').disabled=true;
+  o.status=asDraft?'DRAFT':(isAdmin()?$('#status').value:'SENT');
+  $('#btnSave').disabled=true; $('#btnSaveDraft').disabled=true;
+  busy(true,'กำลังบันทึกคำขอ…');
   try{
     const res=await api('save',{data:o});
+    if(res.requests)setDB(res.requests);
     const pending=FILES.filter(f=>!f.attachment_id);
-    for(const f of pending){
+    for(let i=0;i<pending.length;i++){
+      busy(true,'กำลังอัปโหลดไฟล์ '+(i+1)+'/'+pending.length+'…');
+      const f=pending[i];
       await api('upload',{request_id:res.request_id,file_name:f.file_name,mime_type:f.mime_type,
         size_bytes:f.size_bytes,data_url:f.data_url});
     }
-    await refresh();
     toast(asDraft?('บันทึกร่างแล้ว · '+res.request_code)
       :(editing?('บันทึกการแก้ไขแล้ว · '+res.request_code)
-               :('ส่งคำขอแล้ว · '+res.request_code+' ระบบแจ้งอีเมลถึงผู้ดูแลเรียบร้อย')));
-    openDetail(res.request_id);
+               :('ส่งคำขอแล้ว · '+res.request_code+' ระบบกำลังส่งอีเมลแจ้งผู้ดูแล')));
+    await openDetail(res.request_id);
   }catch(e){ toast(e.message); }
-  finally{ busy(false); $('#btnSave').disabled=false; }
+  finally{ busy(false); $('#btnSave').disabled=false; $('#btnSaveDraft').disabled=false; }
 }
 $('#btnSave').onclick=()=>commit(false);
 $('#btnSaveDraft').onclick=()=>commit(true);
@@ -849,8 +851,8 @@ $('#list').addEventListener('click',async e=>{
   if(a==='edit')return openForm(r);
   if(a==='del'&&isAdmin()){
     if(!confirm('ลบคำขอ '+r.request_code+' ?'))return;
-    busy(true);
-    try{ await api('remove',{request_id:id}); await refresh(); renderHome(); toast('ลบคำขอแล้ว'); }
+    busy(true,'กำลังลบ…');
+    try{ const d=await api('remove',{request_id:id}); if(d.requests)setDB(d.requests); renderHome(); toast('ลบคำขอแล้ว'); }
     catch(err){ toast(err.message); } finally{ busy(false); }
     return;
   }
@@ -865,7 +867,7 @@ let CUR=null;
 const row=(k,v)=>v&&String(v).length?`<dt>${k}</dt><dd>${esc(v)}</dd>`:'';
 const rowA=(k,a)=>a&&a.length?`<dt>${k}</dt><dd>${esc(a.join(' · '))}</dd>`:'';
 async function openDetail(id){
-  busy(true);
+  busy(true,'กำลังโหลดรายละเอียด…');
   let full;
   try{ full=await api('get',{request_id:id}); }
   catch(e){ busy(false); return toast(e.message); }
@@ -887,7 +889,7 @@ async function openDetail(id){
     ? `<ul class="files">${full.files.map(f=>`<li class="file"><span class="ico" style="background:${fcolor(f.file_name)}">${esc(EXT(f.file_name).toUpperCase().slice(0,4))}</span><span class="nm">${esc(f.file_name)}</span><span class="sz">${kb(f.size_bytes)}</span><a class="btn btn-sm" href="${f.url}" target="_blank" rel="noopener">เปิดไฟล์</a></li>`).join('')}</ul>`
     : '<p style="margin:0;color:var(--ink-3)">ไม่มีไฟล์แนบ</p>';
   const hist=full.history.length?`<div class="tab-scroll"><table class="dtab"><thead><tr><th>สถานะ</th><th>วันที่</th><th>โดย</th></tr></thead><tbody>${full.history.slice().reverse().map(h=>{const S=STATUS[h.to_status]||STATUS.DRAFT;return `<tr><td><span class="pill" style="--pc:${S.c};--pb:${S.bg}"><span class="dot"></span>${S.t}</span></td><td>${thDate(h.changed_at)}</td><td>${esc(h.changed_by_name)}</td></tr>`;}).join('')}</tbody></table></div>`:'';
-  const adminPanel=isAdmin()?`<div class="sheet adm"><div class="sheet-head"><span class="sheet-num">✓</span><h2>อัปเดตสถานะ (ผู้ดูแลระบบ)</h2><span class="hint">ระบบจะส่งอีเมลแจ้งผู้ยื่นคำขอโดยอัตโนมัติ</span></div>
+  const adminPanel=isAdmin()?`<div class="sheet adm"><div class="sheet-head"><span class="sheet-num">✓</span><h2>อัปเดตสถานะ (ผู้ดูแลระบบ)</h2><span class="hint">ระบบจะส่งอีเมลแจ้งผู้ยื่นคำขออัตโนมัติ</span></div>
     <div class="sheet-body grid g3">
       <div class="f"><label for="upStatus">สถานะ</label><select id="upStatus">${Object.keys(STATUS).map(k=>`<option value="${k}"${r.status===k?' selected':''}>${STATUS[k].t}</option>`).join('')}</select></div>
       <div class="f"><label for="upCode">รหัสแบบฟอร์ม</label><input type="text" id="upCode" value="${esc(r.form_code)}"></div>
@@ -910,13 +912,15 @@ async function openDetail(id){
     sec(8,'ประวัติการเปลี่ยนสถานะ',hist)+adminPanel;
 
   if(isAdmin())$('#btnUpdate').onclick=async()=>{
-    busy(true);
+    $('#btnUpdate').disabled=true; busy(true,'กำลังอัปเดตสถานะ…');
     try{
-      await api('updateStatus',{request_id:r.request_id,status:$('#upStatus').value,
+      const d=await api('updateStatus',{request_id:r.request_id,status:$('#upStatus').value,
         form_code:$('#upCode').value.trim(),form_version:$('#upVer').value.trim(),
         decision:$('#upDecision').value,decision_note:$('#upNote').value.trim(),
         decision_by:ME.full_name,decision_date:today()});
-      await refresh(); toast('อัปเดตสถานะแล้ว'); openDetail(r.request_id);
+      if(d&&d.requests)setDB(d.requests);
+      toast('อัปเดตสถานะแล้ว');
+      await openDetail(r.request_id);
     }catch(e){ toast(e.message); } finally{ busy(false); }
   };
   go('detail');
@@ -956,12 +960,12 @@ $('#btnPrint').onclick=()=>{
 };
 
 /* =====================================================================
-   14) ผู้ใช้และผู้ดูแล (admin)
+   14) ผู้ใช้และผู้ดูแล
    ===================================================================== */
 const ROLE_TH={owner:'ผู้ดูแลหลัก',admin:'ผู้ดูแลร่วม',user:'ผู้ยื่นคำขอ'};
 async function renderUsers(){
   $('#orgName').value=ORG||'';
-  busy(true);
+  busy(true,'กำลังโหลดรายชื่อ…');
   let list=[];
   try{ list=await api('listUsers'); }catch(e){ busy(false); return toast(e.message); }
   busy(false);
@@ -978,24 +982,26 @@ async function renderUsers(){
 }
 $('#userTable').addEventListener('click',async e=>{
   const pw=e.target.dataset.pw, role=e.target.dataset.role, act=e.target.dataset.act;
+  if(!pw&&!role&&!act)return;
   try{
     if(pw){ const np=prompt('ตั้งรหัสผ่านใหม่ (อย่างน้อย 6 ตัวอักษร)'); if(np===null)return;
-      await api('saveUser',{user_id:pw,password:np}); toast('ตั้งรหัสผ่านใหม่แล้ว แจ้งผู้ใช้ให้เปลี่ยนทันทีที่เข้าระบบ'); }
+      busy(true,'กำลังบันทึก…'); await api('saveUser',{user_id:pw,password:np});
+      toast('ตั้งรหัสผ่านใหม่แล้ว แจ้งผู้ใช้ให้เปลี่ยนทันทีที่เข้าระบบ'); }
     if(role){ const nr=e.target.dataset.cur==='user'?'admin':'user';
       if(!confirm('เปลี่ยนสิทธิ์เป็น '+ROLE_TH[nr]+' ?'))return;
-      await api('saveUser',{user_id:role,role_code:nr}); toast('เปลี่ยนสิทธิ์แล้ว'); }
-    if(act){ await api('removeUser',{user_id:act,activate:e.target.dataset.on==='1'}); toast('ปรับสถานะบัญชีแล้ว'); }
-    renderUsers();
-  }catch(err){ toast(err.message); }
+      busy(true,'กำลังบันทึก…'); await api('saveUser',{user_id:role,role_code:nr}); toast('เปลี่ยนสิทธิ์แล้ว'); }
+    if(act){ busy(true,'กำลังบันทึก…'); await api('removeUser',{user_id:act,activate:e.target.dataset.on==='1'}); toast('ปรับสถานะบัญชีแล้ว'); }
+    await renderUsers();
+  }catch(err){ busy(false); toast(err.message); }
 });
 $('#btnAddUser').onclick=async()=>{
   const p={username:$('#nuUser').value.trim(),full_name:$('#nuName').value.trim(),email:$('#nuEmail').value.trim(),
     password:$('#nuPass').value,role_code:$('#nuRole').value};
   if(!p.username||!p.full_name||!p.password)return toast('กรอกชื่อผู้ใช้ ชื่อ–สกุล และรหัสผ่านให้ครบ');
-  busy(true);
+  busy(true,'กำลังเพิ่มบัญชี…');
   try{ await api('saveUser',p); $('#nuUser').value=$('#nuName').value=$('#nuEmail').value=$('#nuPass').value='';
-    toast('เพิ่มบัญชีแล้ว'); renderUsers(); }
-  catch(e){ toast(e.message); } finally{ busy(false); }
+    toast('เพิ่มบัญชีแล้ว'); await renderUsers(); }
+  catch(e){ busy(false); toast(e.message); }
 };
 $('#btnSaveOrg').onclick=async()=>{
   try{ await api('setConfig',{org_name:$('#orgName').value.trim()}); ORG=$('#orgName').value.trim(); toast('บันทึกการตั้งค่าแล้ว'); }
@@ -1004,13 +1010,14 @@ $('#btnSaveOrg').onclick=async()=>{
 $('#btnChangePass').onclick=async()=>{
   const o=$('#cpOld').value,n=$('#cpNew').value;
   if(!o||!n)return toast('กรอกรหัสผ่านเดิมและรหัสผ่านใหม่');
+  busy(true,'กำลังเปลี่ยนรหัสผ่าน…');
   try{ await api('changePass',{old_password:o,new_password:n}); $('#cpOld').value=$('#cpNew').value='';
     toast('เปลี่ยนรหัสผ่านเรียบร้อย'); }
-  catch(e){ toast(e.message); }
+  catch(e){ toast(e.message); } finally{ busy(false); }
 };
 
 /* =====================================================================
-   15) ส่งออก CSV (admin)
+   15) ส่งออก CSV
    ===================================================================== */
 $('#btnCsv').onclick=()=>{
   if(!DB.length)return toast('ยังไม่มีข้อมูลให้ส่งออก');
@@ -1022,7 +1029,7 @@ $('#btnCsv').onclick=()=>{
     ['ขอบเขต',r=>labs('scopes',arr(r.scopes)).join(' / ')],['ผู้ขอ',r=>r.requester_name],['หน่วยงาน',r=>r.dept_name],
     ['ผลการพิจารณา',r=>r.decision],['วัตถุประสงค์',r=>r.purpose]];
   const q=v=>'"'+String(v==null?'':v).replace(/"/g,'""')+'"';
-  const csv='\ufeff'+cols.map(c=>q(c[0])).join(',')+'\r\n'+DB.map(r=>cols.map(c=>q(c[1](r))).join(',')).join('\r\n');
+  const csv='﻿'+cols.map(c=>q(c[0])).join(',')+'\r\n'+DB.map(r=>cols.map(c=>q(c[1](r))).join(',')).join('\r\n');
   const b=new Blob([csv],{type:'text/csv;charset=utf-8'}), a=document.createElement('a');
   a.href=URL.createObjectURL(b); a.download='enr-requests-'+today()+'.csv'; a.click();
   setTimeout(()=>URL.revokeObjectURL(a.href),1500);
@@ -1030,12 +1037,12 @@ $('#btnCsv').onclick=()=>{
 };
 
 /* =====================================================================
-   16) เริ่มทำงาน — ถ้ามี token เดิมให้เข้าระบบต่อได้เลย
+   16) เริ่มทำงาน
    ===================================================================== */
 (async()=>{
   if(!TOKEN)return;
-  busy(true);
-  try{ const d=await api('me'); await start(d); }
+  busy(true,'กำลังเข้าสู่ระบบ…');
+  try{ await start(await api('me')); }
   catch(e){ localStorage.removeItem(K_TOKEN); TOKEN=''; }
   finally{ busy(false); }
 })();
